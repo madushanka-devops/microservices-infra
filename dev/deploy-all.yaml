@@ -23,7 +23,7 @@ spec:
         kubernetes.io/hostname: worker-2
       containers:
         - name: product-service
-          image: ghcr.io/madushanka-devops/microservices-product:0.0.2
+          image: ghcr.io/madushanka-devops/microservices-product:0.0.3
           ports:
             - containerPort: 5001
 ---
@@ -60,7 +60,7 @@ spec:
         kubernetes.io/hostname: worker-2
       containers:
         - name: cart-service
-          image: ghcr.io/madushanka-devops/microservices-cart:0.0.2
+          image: ghcr.io/madushanka-devops/microservices-cart:0.0.3
           ports:
             - containerPort: 8080
 ---
@@ -97,7 +97,7 @@ spec:
         kubernetes.io/hostname: worker-2
       containers:
         - name: frontend
-          image: ghcr.io/madushanka-devops/microservices-frontend:0.0.2
+          image: ghcr.io/madushanka-devops/microservices-frontend:0.0.3
           ports:
             - containerPort: 3000
 ---
