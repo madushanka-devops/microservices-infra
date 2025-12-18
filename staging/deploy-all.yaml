@@ -124,7 +124,8 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - http:
+    - host: staging.microstore.local
+      http:
         paths:
           # NGINX matches longest path first, so these specific API routes take precedence
           - path: /api/products
